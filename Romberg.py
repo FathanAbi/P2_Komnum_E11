@@ -64,12 +64,12 @@ def Er(x):
 # Driver code
 batasBawah = 0
 batasAtas = np.pi 
-pias = 5
+iterasi = 5
 
-print("Implementasi metode numerik Romberg untuk mencari integrasi f(x) = sin(x) dengan batas bawah =", batasBawah, " dan batas atas =", batasAtas, "sebanyak 10 pias")
+print("Implementasi metode numerik Romberg untuk mencari integrasi f(x) = sin(x) dengan batas bawah =", batasBawah, " dan batas atas =", batasAtas, "sebanyak", iterasi, "iterasi")
 
-T = trapezoid(batasBawah, batasAtas, pias)
-R = romberg(batasBawah, batasAtas, pias)
+T = trapezoid(batasBawah, batasAtas, iterasi)
+R = romberg(batasBawah, batasAtas, iterasi)
 
 print("Metode Trapezoid: I =", T)
 print("Er =", Er(T), "%", "\n")
